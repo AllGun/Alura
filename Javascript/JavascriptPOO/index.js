@@ -7,43 +7,57 @@ class ContaCorrente {
   agencia;
   saldo;
 
+  /*
+  Método sacar
+    - O cliente não pode sacar:
+      se não houver saldo;
+      se não não tiver cheque especial*
+        *O cheque especial da ao cliente um crédito que pode ser sacado
+  */
   sacar(valor) {
     if (this.saldo >= valor) {
       this.saldo -= valor;
-      console.log(this.saldo);
+      //console.log(`Saque R$ ${this.saldo}`);
     } else {
       console.log("Saldo insuficiente.");
     }
   }
+
+  /*
+  Método depositar
+    - O valor não pode ser negativo
+    - O valor não pode ser igual a 0
+  */
+  depositar(valor){
+    if (valor > 0){
+      this.saldo += valor;
+      //console.log(`Depósito R$ ${this.saldo}`);
+      
+    }
+  }
 }
 
-// let valorSadado = 200;
-
-const client1 = new Client(),
-  client2 = new Client(),
-  client3 = new Client();
+//Aqui eu crio um cliente
+const client1 = new Client();
 
 // Dados iniciais para abertura da conta
 client1.name = "Pereira";
 client1.cpf = 58788687090;
 
-client2.name = "Júlia";
-client2.cpf = 47860587009;
-
-client3.name = "Ania";
-client3.cpf = 92661493069;
 
 const contaCorrentePereira = new ContaCorrente();
 contaCorrentePereira.saldo = 0;
 ContaCorrente.agencia = 1001;
 
-console.log(contaCorrentePereira.saldo);
 
-// Pereida depositou 100
-contaCorrentePereira.saldo = 100;
-console.log(contaCorrentePereira.saldo);
+// Ações feitas na conta do Pereira
+console.log(`Cliente: ${client1.name}`);
+
+//Aqui eu chamei o método depositar na conta contaCorrentePereira
+contaCorrentePereira.depositar(100);
 contaCorrentePereira.sacar(50);
+contaCorrentePereira.depositar(200);
+contaCorrentePereira.sacar(35);
+console.log(`Saldo: ${contaCorrentePereira.saldo}`);
 
-console.log(client1);
-console.log(client2);
-console.log(client3);
+console.log(contaCorrentePereira);
