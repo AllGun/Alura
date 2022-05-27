@@ -6,7 +6,18 @@ class Client {
 class ContaCorrente {
   agencia;
   saldo;
+
+  sacar(valor) {
+    if (this.saldo >= valor) {
+      this.saldo -= valor;
+      console.log(this.saldo);
+    } else {
+      console.log("Saldo insuficiente.");
+    }
+  }
 }
+
+// let valorSadado = 200;
 
 const client1 = new Client(),
   client2 = new Client(),
@@ -31,6 +42,7 @@ console.log(contaCorrentePereira.saldo);
 // Pereida depositou 100
 contaCorrentePereira.saldo = 100;
 console.log(contaCorrentePereira.saldo);
+contaCorrentePereira.sacar(50);
 
 console.log(client1);
 console.log(client2);
