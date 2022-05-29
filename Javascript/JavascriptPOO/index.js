@@ -7,6 +7,7 @@ class ContaCorrente {
   agencia;
   // A convenção adota underline (_) à frente de um atributo, isso significa que ele é privado
   _saldo = 0;
+  // #saldo = 0 https://github.com/tc39/proposal-class-fields#private-fields
 
   // Método sacar
   sacar(valor) {
