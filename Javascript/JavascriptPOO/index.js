@@ -1,7 +1,4 @@
-class Client {
-  name;
-  cpf;
-}
+
 
 class ContaCorrente {
   agencia;
