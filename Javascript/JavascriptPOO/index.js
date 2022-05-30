@@ -18,11 +18,16 @@ class ContaCorrente {
   }
 
   // Método depositar
+  // depositar(valor) {
+  //   if (valor > 0) {
+  //     this._saldo += valor;
+  //     console.log(this._saldo);
+  //   }
+  // }
   depositar(valor) {
-    if (valor > 0) {
-      this._saldo += valor;
-      console.log(this._saldo);
-    }
+    if (valor <= 0) return;
+
+    this._saldo += valor;
   }
 }
 
@@ -41,12 +46,13 @@ console.log(`Cliente: ${client1.name}`);
 
 //Aqui eu chamei o método depositar na conta contaCorrentePereira
 contaCorrentePereira.depositar(100);
+
 contaCorrentePereira.depositar(200);
 contaCorrentePereira.depositar(200);
 
 const valorSacado = contaCorrentePereira.sacar(50);
 console.log(`Saque: R$ ${valorSacado}`);
 
-console.log(`Saldo: ${contaCorrentePereira._saldo}`);
+console.log(`Saldo: R$ ${contaCorrentePereira._saldo}`);
 
 console.log(contaCorrentePereira);
