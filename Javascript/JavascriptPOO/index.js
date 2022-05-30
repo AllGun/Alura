@@ -1,3 +1,5 @@
+import {Cliente} from "./Cliente.js"
+import { ContaCorrente } from "./ContaCorrente";
 //Aqui eu crio um cliente
 const client1 = new Client();
 
