@@ -12,6 +12,7 @@
   },
   "author": "Alfredo Gutemberg",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/AllGun/Alura/issues"
   },

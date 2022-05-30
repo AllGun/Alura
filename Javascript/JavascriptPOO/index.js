@@ -1,4 +1,4 @@
-import {Cliente} from "./Cliente.js"
+import {Client} from "./Cliente.js"
 import {ContaCorrente} from "./ContaCorrente.js";
 
 //Aqui eu crio um cliente
