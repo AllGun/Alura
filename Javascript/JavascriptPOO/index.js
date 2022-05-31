@@ -11,7 +11,7 @@ client1.name = "Pereira";
 client1.cpf = 58788687090;
 
 client2.name = "Alice";
-client2.cfp = 81250709075;
+client2.cpf = 81250709075;
 
 
 const contaCorrentePereira = new ContaCorrente();
@@ -34,6 +34,8 @@ console.log(`Saldo: R$ ${contaCorrentePereira._saldo}`);
 
 console.log(contaCorrentePereira);
 
-const conta2 = new ContaCorrente();
-conta2.client = client2;
-conta2.agencia = 1002;
+const contaCorrenteAlice = new ContaCorrente();
+contaCorrenteAlice.client = client2;
+contaCorrenteAlice.agencia = 1002;
+
+console.log(contaCorrenteAlice)
