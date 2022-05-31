@@ -3,10 +3,14 @@ import {ContaCorrente} from "./ContaCorrente.js";
 
 //Aqui eu crio um cliente
 const client1 = new Client();
+const client2 = new Client();
+
 
 // Dados iniciais para abertura da conta
 client1.name = "Pereira";
 client1.cpf = 58788687090;
+
+
 
 const contaCorrentePereira = new ContaCorrente();
 contaCorrentePereira.agencia = 1001;
@@ -27,3 +31,7 @@ console.log(`Saque: R$ ${valorSacado}`);
 console.log(`Saldo: R$ ${contaCorrentePereira._saldo}`);
 
 console.log(contaCorrentePereira);
+
+const conta2 = new ContaCorrente();
+conta2.client = client2;
+conta2.agencia = 1002;
