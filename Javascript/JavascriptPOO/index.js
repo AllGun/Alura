@@ -10,6 +10,7 @@ client1.cpf = 58788687090;
 
 const contaCorrentePereira = new ContaCorrente();
 contaCorrentePereira.agencia = 1001;
+contaCorrentePereira.client = client1
 
 // Ações feitas na conta do Pereira
 console.log(`Cliente: ${client1.name}`);
