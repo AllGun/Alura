@@ -11,6 +11,7 @@ client1.name = "Pereira";
 client1.cpf = 58788687090;
 
 client2.name = "Alice";
+client2.cfp = 81250709075;
 
 
 const contaCorrentePereira = new ContaCorrente();
