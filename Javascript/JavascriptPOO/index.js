@@ -36,8 +36,20 @@ console.log(`Saldo: R$ ${conta01._saldo}`);
 
 console.log(conta01);
 
+//Criando uma conta corrente de nome "conta02"
 const conta02 = new ContaCorrente();
-conta02.cliente = cliente02;
-conta02.agencia = 1002;
 
+// vinculando a conta "conta02" com o cliente "cliene02"
+conta02.cliente = cliente02;
+
+//aqui eu atribuo à agência um número de identificação
+conta02.agencia = 1010;
+
+console.log(conta02);
+
+conta01.depositar(500);
+conta01.transferir(200, conta02);
+
+console.log(conta01)
+console.log();
 console.log(conta02);
