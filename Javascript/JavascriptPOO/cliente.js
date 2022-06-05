@@ -1,4 +1,5 @@
- export class Client {
-    name;
+ export class Cliente {
+    firstName;
+    lastName;
     cpf;
   }

@@ -1,6 +1,6 @@
 export class ContaCorrente {
     agencia;
-    client;
+    cliente;
 
     // A convenção adota underline (_) à frente de um atributo, isso significa que ele é privado
     _saldo = 0;
