@@ -6,6 +6,7 @@ const cliente01 = new Cliente();
 const cliente02 = new Cliente();
 const cliente03 = new Cliente();
 const cliente04 = new Cliente();
+const cliente05 = new Cliente();
 
 
 //Atribuição de dados ao cliente
@@ -25,24 +26,31 @@ cliente04.firstName = "Leonard";
 cliente04.lastName = "Fournette";
 cliente04.cpf = 51389425061;
 
+cliente05.firstName = "Chris";
+cliente05.lastName = "Godwin";
+cliente05.cpf = 28013471080;
+
 
 //Criação da conta
 const conta01 = new ContaCorrente();
 const conta02 = new ContaCorrente();
 const conta03 = new ContaCorrente();
 const conta04 = new ContaCorrente();
+const conta05 = new ContaCorrente();
 
 //Atribuindo Agência à conta
 conta01.agencia = 1001;
 conta02.agencia = 1002;
 conta03.agencia = 1003;
 conta04.agencia = 4004;
+conta05.agencia = 5004;
 
 //Vinculando um cliente a uma conta
 conta01.cliente = cliente01;
 conta02.cliente = cliente02;
 conta03.cliente = cliente03;
 conta04.cliente = cliente04;
+conta05.cliente = cliente05;
 
 
 
