@@ -5,6 +5,7 @@ import {ContaCorrente} from "./ContaCorrente.js";
 const cliente01 = new Cliente();
 const cliente02 = new Cliente();
 const cliente03 = new Cliente();
+const cliente04 = new Cliente();
 
 
 //Atribuição de dados ao cliente
@@ -20,28 +21,48 @@ cliente03.firstName = "Thomas";
 cliente03.lastName = "Brady";
 cliente03.cpf = 48948962060;
 
+cliente04.firstName = "Leonard";
+cliente04.lastName = "Fournette";
+cliente04.cpf = 51389425061;
+
 
 //Criação da conta
 const conta01 = new ContaCorrente();
 const conta02 = new ContaCorrente();
 const conta03 = new ContaCorrente();
+const conta04 = new ContaCorrente();
 
 //Atribuindo Agência à conta
 conta01.agencia = 1001;
 conta02.agencia = 1002;
 conta03.agencia = 1003;
+conta04.agencia = 4004;
 
 //Vinculando um cliente a uma conta
 conta01.cliente = cliente01;
 conta02.cliente = cliente02;
 conta03.cliente = cliente03;
+conta04.cliente = cliente04;
 
 
 
-// Ações feitas na conta do Pereira
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Ações feitas na conta
 console.log(`Cliente: ${cliente01.firstName}`);
 
-//Aqui eu chamei o método depositar na conta contaCorrentePereira
+//Aqui eu chamei o método depositar na conta "conta01"
 conta01.depositar(100);
 
 conta01.depositar(200);
