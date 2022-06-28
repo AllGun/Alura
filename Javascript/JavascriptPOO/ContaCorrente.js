@@ -1,6 +1,14 @@
+import { Cliente } from "./Cliente.js";
 export class ContaCorrente {
     agencia;
-    cliente;
+    _cliente;
+
+    set cliente(novoValor) {
+      if (novoValor isntanceof Cliente){
+        
+      }
+      this._cliente = novoValor;
+    }
 
     // A convenção adota underline (_) à frente de um atributo, isso significa que ele é privado
     _saldo = 0;
