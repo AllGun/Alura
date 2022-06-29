@@ -1,11 +1,12 @@
-class Cliente { // Criando uma classe
-    nome; //Entre as chaves eu tenho campos ou atributos
-    cpf;
+class Cliente {
+  // Criando uma classe
+  nome; //Entre as chaves eu tenho campos ou atributos
+  cpf;
 }
 
 class ContaCorrente {
-    agencia;
-    saldo;
+  agencia;
+  saldo;
 }
 
 //Criar clientes
@@ -14,11 +15,11 @@ const cliente2 = new Cliente();
 
 //Add atributos ao cliente1
 cliente1.nome = "Ricardo";
-cliente1.cpf = 11122233344;
+cliente1.cpf = "111.222.333-44";
 
 //Add atributos ao cliente2
 cliente2.nome = "Alice";
-cliente2.cpf = 22233344455;
+cliente2.cpf = "222.333.444-55";
 
 //Criar contas
 const contaCorrenteRicardo = new ContaCorrente();
@@ -32,11 +33,26 @@ contaCorrenteRicardo.agencia = 1001;
 contaCorrenteAlice.saldo = 0;
 contaCorrenteAlice.agencia = 1001;
 
+//Movimentações conta Ricardo
+contaCorrenteRicardo.saldo = 100;
+
+//Saque
+let valorSacado = 20;
+var saque;
+//Condição para saque
+if (contaCorrenteRicardo.saldo >= valorSacado) {
+    contaCorrenteRicardo.saldo -= valorSacado;
+    saque = "R$ " + valorSacado; // O + aqui concatena
+} else {
+    saque = "Valor insuficiente.";
+}
+
 //Ricardo
 console.log(`Cliente: ${cliente1.nome}`);
 console.log(`CPF: ${cliente1.cpf}`);
 console.log(`Agência: ${contaCorrenteRicardo.agencia}`);
-console.log(`Saldo: R$ ${contaCorrenteRicardo.saldo}` );
+console.log(`Saldo: R$ ${contaCorrenteRicardo.saldo}`);
+console.log(`Saque: ${saque}`);
 
 console.log();
 
@@ -45,5 +61,3 @@ console.log(`Cliente: ${cliente2.nome}`);
 console.log(`CPF: ${cliente2.cpf}`);
 console.log(`Agência ${contaCorrenteAlice.agencia}`);
 console.log(`Saldo: R$ ${contaCorrenteAlice.saldo}`);
-
-
