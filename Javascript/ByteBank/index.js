@@ -20,9 +20,12 @@ cliente2.cpf = 22233344455;
 const contaCorrenteRicardo = new ContaCorrente();
 contaCorrenteRicardo.saldo = 0;
 contaCorrenteRicardo.agencia = 1001;
+
+console.log(`Cliente: ${cliente1.nome}`);
+console.log(`CPF: ${cliente1.cpf}`);
+console.log(`Agência: ${contaCorrenteRicardo.agencia}`);
 console.log(`Saldo: R$ ${contaCorrenteRicardo.saldo}` );
 
-console.log(cliente1);
 console.log(cliente2);
 
 
