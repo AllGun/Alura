@@ -13,6 +13,7 @@ class ContaCorrente {
 const cliente1 = new Cliente();
 const cliente2 = new Cliente();
 const cliente3 = new Cliente();
+const cliente4 = new Cliente();
 
 //Add atributos ao cliente1
 cliente1.nome = "Ricardo";
