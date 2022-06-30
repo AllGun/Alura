@@ -11,8 +11,9 @@ class ContaCorrente {
 
 class EnderecoCliente {
   rua;
-  numero; 
+  numero;
   complemento;
+  bairro;
   estado;
   cidade;
   cep;
@@ -20,12 +21,21 @@ class EnderecoCliente {
 
 //Criar Endereço
 const enderecoCliente1 = new EnderecoCliente();
+const enderecoCliente2 = new EnderecoCliente();
+
+enderecoCliente1.rua = "Rua Ângelo Gimenez";
+enderecoCliente1.numero = 300;
+enderecoCliente1.bairo = "Jardim Ipê";
+enderecoCliente1.complemento = "Apt 01 Bloco 01";
+enderecoCliente1.estado = "São Paulo";
+enderecoCliente1.cidade = "São Paulo";
+enderecoCliente1.cep = "05797-200";
 
 //Criar clientes
 const cliente1 = new Cliente();
 const cliente2 = new Cliente();
 const cliente3 = new Cliente();
-const cliente4 = new Cliente(); 
+const cliente4 = new Cliente();
 
 /*
 Add atributos dos clientes cliente1, cliente2, cliente3 e cliente4
@@ -46,9 +56,6 @@ cliente3.cpf = "202.174.270-90";
 //cliente4
 cliente4.nome = "Lavonte David";
 cliente4.cpf = "471.392.610-83";
-
-
-
 
 //Criar contas
 const contaCorrenteRicardo = new ContaCorrente();
@@ -80,12 +87,11 @@ let valorSacado = 20;
 var saque;
 //Condição para saque
 if (contaCorrenteRicardo.saldo >= valorSacado) {
-    contaCorrenteRicardo.saldo -= valorSacado;
-    saque = "R$ " + valorSacado; // O + aqui concatena
+  contaCorrenteRicardo.saldo -= valorSacado;
+  saque = "R$ " + valorSacado; // O + aqui concatena
 } else {
-    saque = "Valor insuficiente.";
+  saque = "Valor insuficiente.";
 }
-
 
 /* Extrato da conta */
 
@@ -104,7 +110,7 @@ console.log(`CPF: ${cliente2.cpf}`);
 console.log(`Agência ${contaCorrenteAlice.agencia}`);
 console.log(`Saldo: R$ ${contaCorrenteAlice.saldo}`);
 
-console.log()
+console.log();
 
 //Tom Brady
 console.log(`Clente: ${cliente3.nome}`);
@@ -123,4 +129,3 @@ console.log(`Saldo:${contaCorrenteLavonte.saldo}`);
 console.log();
 
 console.log(enderecoCliente1);
-
