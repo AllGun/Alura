@@ -22,7 +22,9 @@ cliente1.cpf = "111.222.333-44";
 cliente2.nome = "Alice";
 cliente2.cpf = "222.333.444-55";
 
-
+//Add atributos do cliente3
+cliente3.nome = "Tom"
+cliente3.cpf = "333.444.555-66"
 
 //Criar contas
 const contaCorrenteRicardo = new ContaCorrente();
