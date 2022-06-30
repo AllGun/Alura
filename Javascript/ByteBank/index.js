@@ -13,24 +13,36 @@ class ContaCorrente {
 const cliente1 = new Cliente();
 const cliente2 = new Cliente();
 const cliente3 = new Cliente();
-const cliente4 = new Cliente();
+const cliente4 = new Cliente(); 
 
-//Add atributos ao cliente1
+/*
+Add atributos dos clientes cliente1, cliente2, cliente3 e cliente4
+*/
+
+//cliente1
 cliente1.nome = "Ricardo";
-cliente1.cpf = "111.222.333-44";
+cliente1.cpf = "422.432.080-08";
 
-//Add atributos ao cliente2
+//cliente2
 cliente2.nome = "Alice";
-cliente2.cpf = "222.333.444-55";
+cliente2.cpf = "807.886.370-53";
 
-//Add atributos do cliente3
-cliente3.nome = "Tom"
-cliente3.cpf = "333.444.555-66"
+//cliente3
+cliente3.nome = "Tom Brady";
+cliente3.cpf = "202.174.270-90";
+
+//cliente4
+cliente4.nome = "Lavonte David";
+cliente4.cpf = "471.392.610-83";
+
+
+
 
 //Criar contas
 const contaCorrenteRicardo = new ContaCorrente();
 const contaCorrenteAlice = new ContaCorrente();
 const contaCorrenteTom = new ContaCorrente();
+const contaCorrenteLavonte = new ContaCorrente(1001, 0);
 
 //Add atributos na conta do Ricardo
 contaCorrenteRicardo.saldo = 0;
@@ -68,3 +80,20 @@ console.log(`Cliente: ${cliente2.nome}`);
 console.log(`CPF: ${cliente2.cpf}`);
 console.log(`Agência ${contaCorrenteAlice.agencia}`);
 console.log(`Saldo: R$ ${contaCorrenteAlice.saldo}`);
+
+console.log()
+
+//Tom Brady
+console.log(`Clente: ${cliente3.nome}`);
+console.log(`CPF: ${cliente3.cpf}`);
+console.log(`Agência: ${contaCorrenteTom.agencia}`);
+console.log(`Saldo: ${contaCorrenteTom.saldo}`);
+
+console.log();
+
+//Lavonte
+console.log(`Cliente:${cliente4.nome}`);
+console.log(`CPF:${cliente4.cpf}`);
+console.log(`Agência:${contaCorrenteLavonte.agencia}`);
+console.log(`Saldo:${contaCorrenteLavonte.saldo}`);
+
