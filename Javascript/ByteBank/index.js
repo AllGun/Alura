@@ -12,6 +12,7 @@ class ContaCorrente {
 //Criar clientes
 const cliente1 = new Cliente();
 const cliente2 = new Cliente();
+const cliente3 = new Cliente();
 
 //Add atributos ao cliente1
 cliente1.nome = "Ricardo";
@@ -20,6 +21,8 @@ cliente1.cpf = "111.222.333-44";
 //Add atributos ao cliente2
 cliente2.nome = "Alice";
 cliente2.cpf = "222.333.444-55";
+
+
 
 //Criar contas
 const contaCorrenteRicardo = new ContaCorrente();
