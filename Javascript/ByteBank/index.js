@@ -9,6 +9,15 @@ class ContaCorrente {
   saldo;
 }
 
+class enderecoCliente {
+  rua;
+  numero; 
+  complemento;
+  estado;
+  cidade;
+  cep;
+}
+
 //Criar clientes
 const cliente1 = new Cliente();
 const cliente2 = new Cliente();
