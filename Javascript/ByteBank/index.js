@@ -9,7 +9,7 @@ class ContaCorrente {
   saldo;
 }
 
-class enderecoCliente {
+class EnderecoCliente {
   rua;
   numero; 
   complemento;
@@ -17,6 +17,9 @@ class enderecoCliente {
   cidade;
   cep;
 }
+
+//Criar Endereço
+const enderecoCliente1 = new EnderecoCliente();
 
 //Criar clientes
 const cliente1 = new Cliente();
@@ -116,4 +119,8 @@ console.log(`Cliente:${cliente4.nome}`);
 console.log(`CPF:${cliente4.cpf}`);
 console.log(`Agência:${contaCorrenteLavonte.agencia}`);
 console.log(`Saldo:${contaCorrenteLavonte.saldo}`);
+
+console.log();
+
+console.log(enderecoCliente1);
 
