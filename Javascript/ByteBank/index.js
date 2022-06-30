@@ -29,6 +29,7 @@ cliente3.cpf = "333.444.555-66"
 //Criar contas
 const contaCorrenteRicardo = new ContaCorrente();
 const contaCorrenteAlice = new ContaCorrente();
+const contaCorrenteTom = new ContaCorrente();
 
 //Add atributos na conta do Ricardo
 contaCorrenteRicardo.saldo = 0;
