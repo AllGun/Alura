@@ -31,6 +31,16 @@ enderecoCliente1.estado = "São Paulo";
 enderecoCliente1.cidade = "São Paulo";
 enderecoCliente1.cep = "05797-200";
 
+console.log(`Rua: ${enderecoCliente1.rua}`);
+console.log(`Número:${enderecoCliente1.numero}`);
+console.log(`Bairro: ${enderecoCliente1.bairro}`);
+console.log(`Complemento: ${enderecoCliente1.complemento}`);
+console.log(`Estado: ${enderecoCliente1.estado}`);
+console.log(`Cidade: ${enderecoCliente1.cidade}`);
+console.log(`CEP: ${enderecoCliente1.cep}`);
+
+console.log();
+
 //Criar clientes
 const cliente1 = new Cliente();
 const cliente2 = new Cliente();
