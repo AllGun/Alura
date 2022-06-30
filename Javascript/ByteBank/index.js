@@ -27,7 +27,7 @@ enderecoCliente1.rua = "Rua Ângelo Gimenez";
 enderecoCliente1.numero = 300;
 enderecoCliente1.bairo = "Jardim Ipê";
 enderecoCliente1.complemento = "Apt 01 Bloco 01";
-enderecoCliente1.estado = "São Paulo";
+enderecoCliente1.estado = "SP";
 enderecoCliente1.cidade = "São Paulo";
 enderecoCliente1.cep = "05797-200";
 
@@ -41,6 +41,23 @@ console.log(`CEP: ${enderecoCliente1.cep}`);
 
 console.log();
 
+enderecoCliente2.numero = 58;
+enderecoCliente2.rua = "Avenida João Castelo";
+enderecoCliente2.bairo = "Centro";
+enderecoCliente2.complemento = "Casa";
+enderecoCliente2.estado = "MA";
+enderecoCliente2.cidade = "Açailândia";
+enderecoCliente2.cep = "65930-972";
+
+console.log(`Rua: ${enderecoCliente2.rua}`);
+console.log(`Número:${enderecoCliente2.numero}`);
+console.log(`Bairro: ${enderecoCliente2.bairro}`);
+console.log(`Complemento: ${enderecoCliente2.complemento}`);
+console.log(`Estado: ${enderecoCliente2.estado}`);
+console.log(`Cidade: ${enderecoCliente2.cidade}`);
+console.log(`CEP: ${enderecoCliente2.cep}`);
+
+console.log();
 //Criar clientes
 const cliente1 = new Cliente();
 const cliente2 = new Cliente();
