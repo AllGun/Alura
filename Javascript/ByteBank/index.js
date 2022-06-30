@@ -42,20 +42,28 @@ cliente4.cpf = "471.392.610-83";
 const contaCorrenteRicardo = new ContaCorrente();
 const contaCorrenteAlice = new ContaCorrente();
 const contaCorrenteTom = new ContaCorrente();
-const contaCorrenteLavonte = new ContaCorrente(1001, 0);
+const contaCorrenteLavonte = new ContaCorrente();
 
-//Add atributos na conta do Ricardo
+/*
+Add atributos nas Contas
+*/
+
+//Ricardo
 contaCorrenteRicardo.saldo = 0;
 contaCorrenteRicardo.agencia = 1001;
 
-//Add atributos na conta da Alice
+//Alice
 contaCorrenteAlice.saldo = 0;
 contaCorrenteAlice.agencia = 1001;
 
-//Movimentações conta Ricardo
+/* 
+Movimentações na conta
+*/
+
+// Depósito Ricardo
 contaCorrenteRicardo.saldo = 100;
 
-//Saque
+//Saque Ricardo
 let valorSacado = 20;
 var saque;
 //Condição para saque
@@ -65,6 +73,9 @@ if (contaCorrenteRicardo.saldo >= valorSacado) {
 } else {
     saque = "Valor insuficiente.";
 }
+
+
+/* Extrato da conta */
 
 //Ricardo
 console.log(`Cliente: ${cliente1.nome}`);
