@@ -44,3 +44,7 @@ const numberListA = [1, 2, 3, 4];
 const numberListB = [1, 2, 3, 4];
 
 console.log(numberListA[0] + numberListB[0]);
+
+console.log(numberListA[1] + numberListB[1]);
+
+console.log(numberListA[2]+numberListB[2]);
