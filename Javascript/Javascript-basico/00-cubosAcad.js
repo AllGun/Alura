@@ -17,14 +17,25 @@ Estritamente diferentes: !===
 
 */
 
-let igualdade = 5 == 6;
-console.log(igualdade);
+// let igualdade = 5 == 6;
+// console.log(igualdade);
 
-let diferente = 5 != 6;
-console.log(diferente);
+// let diferente = 5 != 6;
+// console.log(diferente);
 
-let estritamenteIgual = 5 == "5";
-console.log(estritamenteIgual);
+// let estritamenteIgual = 5 == "5";
+// console.log(estritamenteIgual);
 
+let casa = true;
 
+if (casa){
+    console.log("sim");
+} else {
+    console.log("não");
+}
 
+console.log(casa);
+
+const listaDeNomes = ["José", "Maria", "Arthur"];
+
+console.log(listaDeNomes);
