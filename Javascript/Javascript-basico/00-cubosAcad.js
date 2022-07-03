@@ -41,3 +41,4 @@ const listaDeNomes = ["José", "Maria", "Arthur"];
 console.log(listaDeNomes);
 
 const numberListA = [1, 2, 3, 4];
+const numberListB = [1, 2, 3, 4];
