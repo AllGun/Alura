@@ -28,10 +28,10 @@ Estritamente diferentes: !===
 
 let casa = true;
 
-if (casa){
-    console.log("sim");
+if (casa) {
+  console.log("sim");
 } else {
-    console.log("não");
+  console.log("não");
 }
 
 console.log(casa);
@@ -42,3 +42,5 @@ console.log(listaDeNomes);
 
 const numberListA = [1, 2, 3, 4];
 const numberListB = [1, 2, 3, 4];
+
+console.log(numberListA[0] + numberListB[0]);
