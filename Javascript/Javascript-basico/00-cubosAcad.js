@@ -23,3 +23,8 @@ console.log(igualdade);
 let diferente = 5 != 6;
 console.log(diferente);
 
+let estritamenteIgual = 5 == "5";
+console.log(estritamenteIgual);
+
+
+
