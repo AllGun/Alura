@@ -39,3 +39,5 @@ console.log(casa);
 const listaDeNomes = ["José", "Maria", "Arthur"];
 
 console.log(listaDeNomes);
+
+const numberListA = [1, 2, 3, 4];
