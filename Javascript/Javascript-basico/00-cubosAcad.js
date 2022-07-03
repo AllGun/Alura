@@ -1,5 +1,7 @@
 /*
 Atribuição: =
+
+
 Igualdade: ==
     Retorna true caso os operadores sejam iguais sem comparar tipo
 
@@ -17,3 +19,7 @@ Estritamente diferentes: !===
 
 let igualdade = 5 == 6;
 console.log(igualdade);
+
+let diferente = 5 != 6;
+console.log(diferente);
+
