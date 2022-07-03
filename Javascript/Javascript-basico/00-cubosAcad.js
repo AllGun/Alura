@@ -14,3 +14,6 @@ Estritamente diferentes: !===
 
 
 */
+
+let igualdade = 5 == 6;
+console.log(igualdade);
