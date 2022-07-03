@@ -48,3 +48,5 @@ console.log(numberListA[0] + numberListB[0]);
 console.log(numberListA[1] + numberListB[1]);
 
 console.log(numberListA[2]+numberListB[2]);
+
+console.log(numberListA[3]+numberListB[3]);
