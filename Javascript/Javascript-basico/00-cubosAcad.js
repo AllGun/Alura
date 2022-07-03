@@ -40,8 +40,8 @@ const listaDeNomes = ["José", "Maria", "Arthur"];
 
 console.log(listaDeNomes);
 
-const numberListA = [1, 2, 3, 4];
-const numberListB = [1, 2, 3, 4];
+const numberListA = [1, 2, 3, 4, 5];
+const numberListB = [1, 2, 3, 4, 5];
 
 console.log(numberListA[0] + numberListB[0]);
 
@@ -50,3 +50,5 @@ console.log(numberListA[1] + numberListB[1]);
 console.log(numberListA[2]+numberListB[2]);
 
 console.log(numberListA[3]+numberListB[3]);
+
+console.log(numberListA[4]+numberListB[4]);
