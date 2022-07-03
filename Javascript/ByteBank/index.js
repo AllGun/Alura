@@ -25,7 +25,7 @@ const enderecoCliente2 = new EnderecoCliente();
 
 enderecoCliente1.rua = "Rua Ângelo Gimenez";
 enderecoCliente1.numero = 300;
-enderecoCliente1.bairo = "Jardim Ipê";
+enderecoCliente1.bairro = "Jardim Ipê";
 enderecoCliente1.complemento = "Apt 01 Bloco 01";
 enderecoCliente1.estado = "SP";
 enderecoCliente1.cidade = "São Paulo";
@@ -43,7 +43,7 @@ console.log();
 
 enderecoCliente2.numero = 58;
 enderecoCliente2.rua = "Avenida João Castelo";
-enderecoCliente2.bairo = "Centro";
+enderecoCliente2.bairro = "Centro";
 enderecoCliente2.complemento = "Casa";
 enderecoCliente2.estado = "MA";
 enderecoCliente2.cidade = "Açailândia";
