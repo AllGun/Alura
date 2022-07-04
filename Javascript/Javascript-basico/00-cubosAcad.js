@@ -47,8 +47,44 @@ console.log(numberListA[0] + numberListB[0]);
 
 console.log(numberListA[1] + numberListB[1]);
 
-console.log(numberListA[2]+numberListB[2]);
+console.log(numberListA[2] + numberListB[2]);
 
-console.log(numberListA[3]+numberListB[3]);
+console.log(numberListA[3] + numberListB[3]);
 
-console.log(numberListA[4]+numberListB[4]);
+console.log(numberListA[4] + numberListB[4]);
+
+const colorList = ["Red", "Blue", "Yellow", "Pink", "Brown"];
+const nameGirlList = ["Aline", "Júlia", "Camila", "Caroline", "Jamile"];
+const books2022 = [];
+books2022.push("Mostre seu trabalho");
+books2022.push("Siga em frente");
+books2022.push("Hábitos Atômicos");
+books2022.push("O projeto Fênix");
+books2022[4]= "Eu robô";
+books2022[5] = "Édipo Rei";
+books2022[6] = "Lula";
+books2022.push("Java");
+
+console.log(books2022);
+
+console.log(typeof nameGirlList);
+
+console.log(typeof nameGirlList[0]);
+
+const notas = [10, 9, 8, 5, 8, 7];
+let soma = 0;
+
+for (let item of notas) {
+    soma = soma +item;
+}
+
+console.log(soma);
+
+var listaQualquer = [];
+
+listaQualquer.push(1);
+console.log(listaQualquer);
+console.log(typeof(listaQualquer));
+
+books2022.pop("Java");
+console.log(books2022);
