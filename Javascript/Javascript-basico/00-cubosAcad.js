@@ -80,7 +80,8 @@ for (let item of notas) {
 
 console.log(soma);
 
-var listaQualquer = [];
+const listaQualquer = [];
+const listaB = [1, 2, 3, 5];
 
 listaQualquer.push(1);
 console.log(listaQualquer);
@@ -88,3 +89,11 @@ console.log(typeof(listaQualquer));
 
 books2022.pop("Java");
 console.log(books2022);
+
+console.log(listaB);
+
+console.log(typeof(listaB));
+
+const listaDeListas = [listaB, listaQualquer, notas, books2022];
+
+console.log(listaDeListas);
