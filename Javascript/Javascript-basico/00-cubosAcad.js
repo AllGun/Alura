@@ -62,7 +62,7 @@ books2022.push("Hábitos Atômicos");
 books2022.push("O projeto Fênix");
 books2022[4]= "Eu robô";
 books2022[5] = "Édipo Rei";
-books2022[6] = "Lula";
+books2022[6] = "Javascript";
 books2022.push("Java");
 
 console.log(books2022);
